@@ -32,5 +32,5 @@ jobs:
       uses: ncipollo/release-action@v1
       with: 
         tag: "releasev1"
-        artifacts: "bin/RELEASE/*.dll"
+        artifacts: "/home/runner/work/InfoMsg/InfoMsg/bin/Debug/net6.0/*.dll"
         token: ${{ secrets.MY_BUILD_SECRET }}
