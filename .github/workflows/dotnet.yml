@@ -31,6 +31,6 @@ jobs:
     - name: Create Debug Release
       uses: ncipollo/release-action@v1
       with: 
-        tag: "release"
+        tag: "releasev1"
         artifacts: "bin/RELEASE/*.dll"
         token: ${{ secrets.MY_BUILD_SECRET }}
