@@ -32,5 +32,5 @@ jobs:
       uses: ncipollo/release-action@v1
       with: 
         tag: "release"
-        artifacts: "BUILD"
+        artifacts: "bin/RELEASE/*.dll"
         token: ${{ secrets.MY_BUILD_SECRET }}
