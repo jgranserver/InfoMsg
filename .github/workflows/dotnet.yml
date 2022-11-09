@@ -29,4 +29,6 @@ jobs:
     - name: build/release
       run: dotnet build
     - name: copy build
-      run: cp /home/runner/work/InfoMsg/InfoMsg/bin/Debug/net6.0/InfoMsg.dll bin/Release
+      run: |
+           cd InfoMsg
+           cp /home/runner/work/InfoMsg/InfoMsg/bin/Debug/net6.0/InfoMsg.dll bin/Release
