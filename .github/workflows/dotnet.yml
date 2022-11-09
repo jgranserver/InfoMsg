@@ -28,7 +28,9 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: build/release
       run: dotnet build
-    - name: copy build
-      run: |
-           mkdir ~/bin/Release
-           cp /home/runner/work/InfoMsg/InfoMsg/bin/Debug/net6.0/InfoMsg.dll ~/bin/Release
+    - name: Create Debug Release
+      uses: ncipollo/release-action@v1
+      with: 
+        tag: "release"
+        artifacts: "BUILD"
+        token: ${{ secrets.MY_BUILD_SECRET }}
