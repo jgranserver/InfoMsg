@@ -28,3 +28,4 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: build/release
       run: dotnet build
+           cp /home/runner/work/InfoMsg/InfoMsg/bin/Debug/net6.0/InfoMsg.dll bin/Release
