@@ -26,8 +26,8 @@ namespace FeatureInfo
 
                 infos.GetInfoMsgs.Add(new InfoMsg()
                 {
-                    info = "ranks",
-                    msg = "Novice, Apprentice, Pro, Master, G.Master, Champ, Completer, Terrarian"
+                    info = "keyword",
+                    msg = "information send for this keyword"
                 });
                 
                 File.WriteAllText(configpath, JsonConvert.SerializeObject(infos, Formatting.Indented));
