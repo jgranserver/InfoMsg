@@ -31,6 +31,6 @@ jobs:
     - name: Create Debug Release
       uses: ncipollo/release-action@v1
       with: 
-        tag: "releasev1"
+        tag: "releasev2"
         artifacts: "/home/runner/work/InfoMsg/InfoMsg/bin/Debug/net6.0/*.dll"
         token: ${{ secrets.MY_BUILD_SECRET }}
