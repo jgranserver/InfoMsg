@@ -30,4 +30,4 @@ jobs:
       run: dotnet build
     - name: copy build
       run: |
-           cp /home/runner/work/InfoMsg/InfoMsg/bin/Debug/net6.0/InfoMsg.dll ../../../../../bin/Release
+           cp /home/runner/work/InfoMsg/InfoMsg/bin/Debug/net6.0/InfoMsg.dll ~/bin/Release
